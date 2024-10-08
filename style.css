@@ -1,0 +1,92 @@
+*{
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+body {
+    font-family: Tahoma;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+    background-color: whitesmoke;
+}
+
+table {
+    margin: 0px auto; /* Center the table horizontally and add space between tables */
+    border-collapse: collapse; /* Collapse borders */
+    width: 80%; /* Set a width for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+    font-size: 12px;
+    font-family: Tahoma;
+    border-spacing: 2px;
+    border: 0.5px ;
+    padding: 1px;
+    text-align: center;
+    box-sizing: border-box;
+    table-layout: fixed;  /* Ensure equal width for all columns */
+
+}
+
+.grades-table, .sem {
+    border-collapse: collapse; /* Collapse borders for all classes */
+    font-size: 12px;
+}
+
+/* Apply borders to table cells and rows */
+.grades-table td, .grades-table th {
+    border: 1px solid rgb(173, 172, 172); /* Add border to cells */
+    padding: 12px; /* Increased padding for better spacing inside cells */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Style for header cells */
+.grades-table th {
+    color: rgb(51, 51, 51);    
+    font-weight: bold;
+    background-color: lightgray;
+    height: 35px;
+    padding: 10px;
+}
+
+/* Style the semester header row */
+.sem {
+    background-color: #539fea;
+    font-weight: bold;
+    text-align: center;
+    height: 15px;
+    color: #fff;
+}
+
+.table-body-in-progress {
+    background-color: yellow;
+    color: rgb(51, 51, 51);
+    height: 45px; 
+}
+
+.table-body-taken {
+    background-color: skyblue;
+    color: rgb(51, 51, 51);
+    height: 45px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+div {
+    margin: 1px;
+    padding: 1px;
+}
+
+/* Right-align the specific columns */
+.grades-table td:nth-child(2), /* Description */
+.grades-table td:nth-child(3), /* Unit */
+.grades-table td:nth-child(4), /* Grade */
+.grades-table td:nth-child(5), /* Remarks */
+.grades-table td:nth-child(6), /* Course */
+.grades-table td:nth-child(7) { /* Term */
+text-align: center; /* Right-align the text */
+}
